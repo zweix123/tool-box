@@ -11,4 +11,14 @@
       ]
   ```
 
++ 检测文件编码类型：
 
+  ```python
+  import chardet
+  with open(file_name, "rb") as f:
+      res = chardet.detect(f.read())
+  res
+  # {'encoding': '...', 'confidence': 数字}  # 编码和概率
+  ```
+
+  

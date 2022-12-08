@@ -1,0 +1,2 @@
+Function Prompt { "$( ( get-item $pwd ).Name )>" }
+function Prompt {">"}
